@@ -4,14 +4,18 @@ console.log("ej2");
 
 const prompt = require("prompt-sync")();
 
-const number = parseInt(prompt("Ingrese numero: "))
+let number = parseInt(prompt("Ingrese numero: "))
+while( number != 0){
+    console.log(`La tabla de multiplicar de ${number} es: `)
 
-console.log(`La tabla de multiplicar de ${number} es: `)
-for (let i = 0; i <= 10; i++){
-    const value = i * number
-    console.log(`${number} * ${i} = ${value}`)
+    for (let i = 0; i <= 10; i++){
+        const value = i * number
+        console.log(`${number} * ${i} = ${value}`)
+    }
+
+    number = parseInt(prompt("Ingrese numero: "))
 }
-
+console.log("Usuario ha ingresado 0");
 // alt version
 // console.log(`La tabla de multiplicar de ${number} es: `)
 // let i = 0
