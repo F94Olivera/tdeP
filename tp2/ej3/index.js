@@ -9,7 +9,7 @@ console.log("ej3");
 
 const prompt = require("prompt-sync")();
 
-const year = parseInt(prompt("Ingrese año: "))
+let year = parseInt(prompt("Ingrese año: "))
 while (year != 0){
     if (( year % 4 == 0 ) &&
         (year % 100 != 0 || year % 400 == 0)){
@@ -17,4 +17,5 @@ while (year != 0){
     } else {
         console.log("NO ES BISIESTO")
     }
+    year = parseInt(prompt("Ingrese año: "))
 }
