@@ -7,7 +7,7 @@
 console.log("En orden creciente de 1 a 50")
 console.log("solo divisibles por 2 y 3")
 for (let i = 1; i <= 50; i++){
-    if ( i % 2 == 0 && i % 3 == 0 ) {
+    if ( i % 2 === 0 && i % 3 === 0 ) {
         console.log("i: ", i);
     }
 }
@@ -16,7 +16,7 @@ console.log("En orden decreciente de 150 a 105")
 console.log("solo divisibles por 2 y 3")
 let i = 150;
 while ( i >= 105 ) {
-    if ( i % 2 == 0 && i % 3 == 0 ) {
+    if ( i % 2 === 0 && i % 3 === 0 ) {
         console.log("i: ", i);
     }
     i--;
