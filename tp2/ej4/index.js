@@ -8,7 +8,6 @@ const dividendo = parseInt(prompt("Ingrese dividendo: "))
 const divisor = parseInt(prompt("Ingrese divisor: "))
 
 const result = Math.floor(dividendo/divisor)
-
 const remainder = dividendo % divisor
 
 console.log("result ", result)
